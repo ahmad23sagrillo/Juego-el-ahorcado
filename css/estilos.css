@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Shippori+Antique+B1&display=swap');
+* {
+    font-family: 'Inter';
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EAFAF1;
+    width: 98%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn {
+    font-size: 16px;
+    border-radius: 24px;
+    padding: 24px;
+    border: 1px solid;
+    height: 67px;
+    text-decoration: none;
+    text-align: center;
+    width: 31%;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: darkblue;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    border: 1px solid darkblue;
+    color: darkblue;
+}
+
+.btn-secondary {
+    background-color: #d8e8e3;
+    border: 1px solid darkblue;
+    color: darkblue;
+}
+
+.btn-secondary:hover {
+    background-color: darkblue;
+    color: #d8e8e3;
+}
+
+header {
+    height: 50px;
+    margin: 10px;
+    padding: 5px;
+}
+
+
+.page_1 {
+    margin-top: 10%;
+}
+
+.page_1 .group-btn div {
+    margin: 20px;
+}
+
+.page_1 .btn {
+    width: 317px;
+}
+
+.page_1 .btn-primary {
+    height: 95px;
+}
+
+.page_2 {
+    margin: 0 25% 0 25%;
+}
+
+.page_2 .btn {
+    width: 49%;
+}
+
+.page_2 .input {
+    font-size: 32px;
+    border: none;
+    outline: none;
+    background-color: #EAFAF1;
+    margin-top: 20px;
+    height: 344px;
+    width: 100%;
+    resize: none;
+}
+
+.page_2 .input::placeholder {
+    color: darkblue;
+}
+
+.page_2 .warnign {
+    text-align: left;
+    font-size: 13px;
+    margin: 0 0 20px 0;
+    color: #D68910;
+}
+
+
+/* Page 3: game*/
+
+.page_3 canvas {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 4px solid darkblue;
+}
+
+.page_3 .displayUser {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.page_3 .correctWord {
+    margin: 30px;
+    height: 30px;
+    list-style: none;
+}
+
+.page_3 .correctWord li {
+    float: left;
+    width: 80px;
+    height: 60px;
+    font-size: 48px;
+    color: darkblue;
+    margin: 0 30px 0 30px;
+    border-bottom: solid 4px darkblue;
+}
+
+#wrongWord {
+    text-align: center;
+    font-weight: 400px;
+    font-size: 24px;
+    color: darkblue;
+    height: 30px;
+}
+
+.page_3 .btn {
+    width: 30%;
+    margin: 10px;
+}
+
+
+/* popup */
+
+.background-popup {
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.content-popup {
+    text-align: center
+}
+
+#closePopup {
+    color: white;
+    font-weight: bold;
+    transition: all 200ms;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: darkblue;
+    border-radius: 7px;
+}
+
+#closePopup:hover {
+    color: #EAFAF1;
+    background-color: blue;
+}
+
+.keyboard {
+    background: transparent;
+    color: #E5E5E5;
+    outline: none;
+    border: none;
+    display: none;
+}
+
+.btn-keyboard {
+    float: right;
+    border: none;
+    background-color: transparent;
+    color: darkblue;
+    display: none;
+}
+
+.btn-keyboard svg {
+    height: 20px;
+    width: 20px;
+    border: none;
+    outline: none;
+}
+
+.btn-keyboard:hover {
+    color: darkblue;
+}
+
+footer {
+    margin-top: 10%;
+}
+
+footer .about {
+    padding: 30px;
+}
+
+footer .about a {
+    text-decoration: none;
+    color: darkblue;
+    margin: 10px;
+    cursor: pointer;
+}
+
+footer .about a:hover {
+    color: blue;
+}
+
+@media(max-width:900px) {
+   
+    .popup {
+        width: 70%;
+        font-size: 20px;
+    }
+    
+    .page_1 {
+        margin-top: 30%;
+    }
+    .page_1 .btn-primary {
+        height: 100px;
+    }
+    
+    .page_2 {
+        margin: 0% 3% 0% 3%;
+    }
+    header {
+        margin-top: 8%;
+    }
+    .page_2 .input {
+        margin-top: 10%;
+        height: 234px;
+    }
+    .page_2 .group-btn {
+        margin-top: 60%;
+    }
+   
+    .page_3 {
+        margin-top: 50px;
+    }
+    .page_3 .displayUser {
+        margin-top: 10%;
+        margin-bottom: 20%;
+    }
+    #closePopup {
+        font-size: calc(1rem - 1vw);
+    }
+    .keyboard {
+        display: block;
+    }
+    .btn-keyboard {
+        display: block;
+    }
+}
+
+
+
+@media(max-width:500px) {
+   
+    .popup {
+        width: 90%;
+        padding: 7px;
+    }
+    .page_1 {
+        margin-top: 30%;
+    }
+    .page_1 .btn {
+        width: 95%;
+    }
+    header {
+        margin-top: 10%;
+    }
+    .page_2 {
+        width: 90%;
+        margin: 0 7% 0 7%;
+    }
+    .page_2 .input {
+        margin-top: 10%;
+        height: 244px;
+    }
+    .page_2 .group-btn {
+        margin-top: 10%;
+    }
+    .page_2 .btn {
+        width: 90%;
+        margin-top: 5px;
+    }
+    .page_3 {
+        margin-top: 0%;
+    }
+    .page_3 .displayUser {
+        margin-top: 7%;
+        margin-bottom: 10%;
+    }
+    .page_3 .correctWord {
+        display: flex;
+        justify-content: center;
+    }
+    .page_3 .correctWord li {
+        width: 50vw;
+        margin-inline-start: auto;
+        font-size: 45px;
+    }
+    .page_3 .wrongWord {
+        margin: 7% 0 0 0;
+    }
+    .page_3 .btn {
+        width: 90%;
+    }
+    .page_3 .group-btn {
+        display: block !important;
+    }
+    footer .about {
+        padding: 20px;
+        margin-top: 7%;
+    }
+    footer .about a {
+        margin: 3px;
+    }
+}
